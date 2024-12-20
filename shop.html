@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торты на заказ</title>
+    <link rel="stylesheet" href="shopstyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="main.html" class="nav-button">Главная</a>
+                    <div class="tiny-cake"></div>
+                </li>
+                <li>
+                    <a href="gallery.html" class="nav-button">Галерея</a>
+                    <div class="tiny-cake"></div>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-button">О нас</a>
+                    <div class="tiny-cake"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Торты</h1>
+
+        <section class="cake-section">
+            <div class="cake-card">
+                <img src="goodsimages/heart-cake.jpg" alt="Сердце" class="cake-image">
+                <div class="cake-description">
+                    <h2>Сердце</h2>
+                    <p>Небольшой муссовый торт, подаётся охлаждённым, покрыт нежным бархатом, прослойка делается из фруктов или ягод. Вес торта около 1 кг.</p>
+                    <p class="price">Стоимость: 2000 руб</p>
+                    <button class="order-button" data-name="Сердце" data-price="2000">Заказать</button>
+                </div>
+            </div>
+            <div class="cake-card">
+                <img src="goodsimages/yin-yang-cake.jpg" alt="Инь-Янь" class="cake-image">
+                <div class="cake-description">
+                    <h2>Инь-Янь</h2>
+                    <p>Муссовый торт, состоящий из двух разных начинок: белый шоколад с малиной и смородиновое суфле. Оригинальный выбор для ценителей вкуса!</p>
+                    <p class="price">Стоимость: 2500 руб</p>
+                    <button class="order-button" data-name="Инь-Янь" data-price="2500">Заказать</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="shopscript.js"></script>
+</html>

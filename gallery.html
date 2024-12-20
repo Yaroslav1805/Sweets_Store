@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Галерея изображений</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="gallerystyles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Галерея изображений</h1>
+        <div class="gallery" data-settings='{
+            "gap": 10,
+            "visibleElements": 3,
+            "isResponsive": true,
+            "showNavigation": true,
+            "showPagination": true,
+            "enableKeyControl": true,
+            "animate": true,
+            "transitionSpeed": 0.4,
+            "responsive": {
+                "320": { "visibleElements": 1, "gap": 5 },
+                "768": { "visibleElements": 2 },
+                "1024": { "visibleElements": 3 }
+            }
+        }'>
+            <div class="slider">
+                <div class="stage">
+                    <div><img src="galleryimages/cheesecake.jpg" alt="Image 1"></div>
+                    <div><img src="galleryimages/CheesecakeChocolateMousse.jpg" alt="Image 2"></div>
+                    <div><img src="galleryimages/chocolate-cake.jpg" alt="Image 3"></div>
+                    <div><img src="galleryimages/eclairs.jpg" alt="Image 4"></div>
+                    <div><img src="galleryimages/img_01.jpg" alt="Image 5"></div>
+                    <div><img src="galleryimages/img_02.jpg" alt="Image 6"></div>
+                    <div><img src="galleryimages/img_03.jpg" alt="Image 7"></div>
+                    <div><img src="galleryimages/img_04.jpg" alt="Image 8"></div>
+					<div><img src="galleryimages/kruassany.jpg" alt="Image 9"></div>
+					<div><img src="galleryimages/maffins.jpg" alt="Image 10"></div>
+                    <div><img src="galleryimages/pirogsyagodami.jpg" alt="Image 11"></div>
+					<div><img src="galleryimages/tiramisu.jpg" alt="Image 12"></div>
+                </div>
+            </div>
+            <div class="navigation">
+                <button data-action="prev">Previous</button>
+                <button data-action="next">Next</button>
+            </div>
+            <ul class="pagination"></ul>
+        </div>
+		<button id="back-to-shop" class="back-button">Вернуться в магазин</button>
+    </div>
+    <script src="galleryscript.js"></script>
+</body>
+</html>

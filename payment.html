@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и оплата</title>
+    <link rel="stylesheet" href="paymentstyles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Регистрация и оплата</h1>
+        <form action="/submit_order" method="POST">
+            <!-- Личные данные -->
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" placeholder="Введите вашу фамилию" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+            </div>
+            
+            <!-- Адрес доставки -->
+            <h2>Адрес доставки</h2>
+            <div class="form-group">
+                <label for="address">Адрес:</label>
+                <input type="text" id="address" name="address" placeholder="Улица, дом, квартира" required>
+            </div>
+            <div class="form-group">
+                <label for="city">Город:</label>
+                <input type="text" id="city" name="city" placeholder="Введите город" required>
+            </div>
+            <div class="form-group">
+                <label for="postcode">Почтовый индекс:</label>
+                <input type="text" id="postcode" name="postcode" placeholder="Введите индекс" required>
+            </div>
+
+            <!-- Выбор способа оплаты -->
+            <h2>Оплата</h2>
+            <div class="form-group">
+                <label for="payment-method">Выберите способ оплаты:</label>
+                <select id="payment-method" name="payment_method" required>
+                    <option value="card">Банковская карта</option>
+                    <option value="cash">Наличные при получении</option>
+                    <option value="online">Онлайн-платеж</option>
+                </select>
+            </div>
+
+            <div class="container">
+                <h1>Оплата заказа</h1>
+                <p>Итого к оплате: <span id="total-price">0</span> ₽</p>
+                <button class="pay-button">Оплатить сейчас</button>
+            </div>
+        </form>
+    </div>
+    <script src="paymentscript.js"></script>
+</body>
+</html>

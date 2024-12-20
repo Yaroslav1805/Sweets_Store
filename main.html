@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ассортимент</title>
+    <link rel="stylesheet" href="mainstyles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="backgroundimages/logoshop.jpg" alt="Ассортимент">
+            <h1>Наш ассортимент</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#cakes">Торты</a></li>
+            <li><a href="#pastries">Пирожные</a></li>
+            <li><a href="#cookies">Печенье</a></li>
+            <li><a href="#baking">Выпечка</a></li>
+        </ul>
+    </nav>
+    <main>
+        <button id="back-to-shop" class="back-button">В начало</button>
+        <button class="toggle-cart">Корзина</button>
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3>Корзина</h3>
+                <button id="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Товары добавляются сюда -->
+            </div>
+            <div class="cart-footer">
+                <p>Итого: <span class="total-price">0</span> ₽</p>
+                <button class="checkout-button">Оплатить</button>
+            </div>
+        </div>
+
+        <h2>Рекомендуем</h2>
+                <!-- Секция тортов -->
+        <section id="cakes">
+            <h2>Торты</h2>
+            <div class="items">
+                <div class="item" data-id="1">
+                    <img src="goodsimages/black-forest.jpg" alt="Черный лес">
+                    <p>Черный лес</p>
+                    <p class="price">1 790 ₽</p>
+                    <button class="add-to-cart" data-price="1700">Заказать</button>
+                </div>
+                <div class="item" data-id="2">
+                    <img src="goodsimages/kiev.jpg" alt="Киев">
+                    <p>Киев</p>
+                    <p class="price">1 280 ₽</p>
+                    <button class="add-to-cart" data-price="1280">Заказать</button>
+                </div>
+                <div class="item" data-id="3">
+                    <img src="goodsimages/sicilian.jpg" alt="Сицилийский">
+                    <p>Сицилийский</p>
+                    <p class="price">1 300 ₽</p>
+                    <button class="add-to-cart" data-price="1300">Заказать</button>
+                </div>
+                <div class="item" data-id="4">
+                    <img src="goodsimages/fairy-tales.jpg" alt="Детские сказки">
+                    <p>Детские сказки</p>
+                    <p class="price">1 305 ₽</p>
+                    <button class="add-to-cart" data-price="1305">Заказать</button>
+                </div>
+                <div class="item" data-id="5">
+                    <img src="goodsimages/red-velvet.jpg" alt="Красный бархат">
+                    <p>Красный бархат</p>
+                    <p class="price">1 600 ₽</p>
+                    <button class="add-to-cart" data-price="1600">Заказать</button>
+                </div>
+                <div class="item" data-id="6">
+                    <img src="goodsimages/honey-cake.jpg" alt="Медовик">
+                    <p>Медовик</p>
+                    <p class="price">1 350 ₽</p>
+                    <button class="add-to-cart" data-price="1350">Заказать</button>
+                </div>
+                <div class="item" data-id="7">
+                    <img src="goodsimages/tiramisu.jpg" alt="Тирамису">
+                    <p>Тирамису</p>
+                    <p class="price">1 400 ₽</p>
+                    <button class="add-to-cart" data-price="1400">Заказать</button>
+                </div>
+                <div class="item" data-id="8">
+                    <img src="goodsimages/chocolate-cake.jpg" alt="Шоколадный">
+                    <p>Шоколадный</p>
+                    <p class="price">1 500 ₽</p>
+                    <button class="add-to-cart" data-price="1500">Заказать</button>
+                </div>
+            </div>
+        </section>
+        <!-- Секция пирожных -->
+        <section id="items">
+            <h2>Пирожные</h2>
+            <div class="items">
+                <div class="item" data-id="9">
+                    <img src="goodsimages/eclair.jpg" alt="Эклер">
+                    <p>Эклер</p>
+                    <p class="price">120 ₽</p>
+                    <button class="add-to-cart" data-price="120">Заказать</button>
+                </div>
+                <div class="item" data-id="10">
+                    <img src="goodsimages/macaron.jpg" alt="Макарон">
+                    <p>Макарон</p>
+                    <p class="price">90 ₽</p>
+                    <button class="add-to-cart" data-price="90">Заказать</button>
+                </div>
+                <div class="item" data-id="11">
+                    <img src="goodsimages/tartalet.jpg" alt="Тарталетка">
+                    <p>Тарталетка</p>
+                    <p class="price">150 ₽</p>
+                    <button class="add-to-cart" data-price="150">Заказать</button>
+                </div>
+                <div class="item" data-id="12">
+                    <img src="goodsimages/profiterole.jpg" alt="Профитроли">
+                    <p>Профитроли</p>
+                    <p class="price">180 ₽</p>
+                    <button class="add-to-cart" data-price="180">Заказать</button>
+                </div>
+            </div>
+        </section>
+        <!-- Секция печенья -->
+        <section id="items">
+            <h2>Печенье</h2>
+            <div class="items">
+                <div class="item" data-id="13">
+                    <img src="goodsimages/chocolate-cookie.jpg" alt="Шоколадное печенье">
+                    <p>Шоколадное печенье</p>
+                    <p class="price">300 ₽ / кг</p>
+                    <button class="add-to-cart" data-price="300">Заказать</button>
+                </div>
+                <div class="item" data-id="14">
+                    <img src="goodsimages/oatmeal-cookie.jpg" alt="Овсяное печенье">
+                    <p>Овсяное печенье</p>
+                    <p class="price">250 ₽ / кг</p>
+                    <button class="add-to-cart" data-price="250">Заказать</button>
+                </div>
+                <div class="item" data-id="15">
+                    <img src="goodsimages/shortbread.jpg" alt="Песочное печенье">
+                    <p>Песочное печенье</p>
+                    <p class="price">280 ₽ / кг</p>
+                    <button class="add-to-cart" data-price="280">Заказать</button>
+                </div>
+                <div class="item" data-id="16">
+                    <img src="goodsimages/gingerbread.jpg" alt="Пряничное печенье">
+                    <p>Пряничное печенье</p>
+                    <p class="price">270 ₽ / кг</p>
+                    <button class="add-to-cart" data-price="270">Заказать</button>
+                </div>
+            </div>
+        </section>
+        <!-- Секция выпечки -->
+        <section id="items">
+            <h2>Выпечка</h2>
+            <div class="items">
+                <div class="item" data-id="17">
+                    <img src="goodsimages/croissant.jpg" alt="Круассан">
+                    <p>Круассан</p>
+                    <p class="price">70 ₽</p>
+                    <button class="add-to-cart" data-price="70">Заказать</button>
+                </div>
+                <div class="item" data-id="18">
+                    <img src="goodsimages/bun.jpg" alt="Булочка с корицей">
+                    <p>Булочка с корицей</p>
+                    <p class="price">50 ₽</p>
+                    <button class="add-to-cart" data-price="50">Заказать</button>
+                </div>
+                <div class="item" data-id="19">
+                    <img src="goodsimages/puff.jpg" alt="Слойка с яблоком">
+                    <p>Слойка с яблоком</p>
+                    <p class="price">60 ₽</p>
+                    <button class="add-to-cart" data-price="60">Заказать</button>
+                </div>
+                <div class="item" data-id="20">
+                    <img src="goodsimages/danish.jpg" alt="Датский пирог">
+                    <p>Датский пирог</p>
+                    <p class="price">80 ₽</p>
+                    <button class="add-to-cart" data-price="80">Заказать</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="mainscript.js"></script>
+</body>
+</html>
