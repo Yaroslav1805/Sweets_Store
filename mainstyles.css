@@ -31,7 +31,7 @@ h1 {
     color: rgb(151, 0, 111); /* Цвет текста внутри */
     -webkit-text-stroke: 2px rgb(255, 255, 255); /* Толщина и цвет обводки */
     text-stroke: 2px black; /* Для других движков браузера, если поддерживается */
-    font-size: 3.5em;
+    font-size: 2em;
     flex: 1;
     text-align: center;
 }
